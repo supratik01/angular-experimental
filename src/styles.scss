@@ -1,0 +1,463 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'TTCommonsProRegular';
+    src: url('../src/assets/fonts/TTCommonsProRegular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: TTCommonsProRegular, Arial, Helvetica, sans-serif;
+    // font-family: Open Sans, sans-serif !important;
+}
+
+.section-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+// container
+.container-fluid {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-sm {
+    font-size: .875rem!important;
+}
+
+.text-success {
+    color: #2dce89!important;
+}
+
+.text-nowrap {
+    white-space: nowrap !important;
+}
+
+// Flex Box
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-start {
+    justify-content: flex-start !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+.align-items-start {
+    align-items: flex-start !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.align-items-center {
+    align-items: flex-end !important;
+}
+
+.bg-primary {
+    background-color: #5e72e4!important;
+}
+
+// margins
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mr-2 {
+    margin-right: 0.5rem !important;
+}
+
+// padding
+.pb-6,
+.py-6 {
+    padding-bottom: 5rem!important;
+}
+
+// background
+.bg-gradient-orange {
+    background: linear-gradient(87deg, #fb6340 0, #fbb140 100%)!important;
+}
+
+.bg-gradient-red {
+    background: linear-gradient(87deg, #f5365c 0, #f56036 100%)!important;
+}
+
+.bg-gradient-green {
+    background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%)!important;
+}
+
+.bg-gradient-info {
+    background: linear-gradient(87deg, #11cdef 0, #1171ef 100%)!important;
+}
+
+// GRID
+.row {
+    // display: flex;
+    // flex-wrap: wrap;
+    // width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.col-12 {
+    // width: 100%;
+    grid-column: span 12;
+}
+
+.col-11 {
+    // width: 91.66%;
+    grid-column: span 11;
+}
+
+.col-10 {
+    // width: 83.33%;
+    grid-column: span 10;
+}
+
+.col-9 {
+    // width: 75%;
+    grid-column: span 9;
+}
+
+.col-8 {
+    // width: 66.66%;
+    grid-column: span 8;
+}
+
+.col-7 {
+    // width: 58.33%;
+    grid-column: span 7;
+}
+
+.col-6 {
+    // width: 50%;
+    grid-column: span 6;
+}
+
+.col-5 {
+    // width: 41.66%;
+    grid-column: span 5;
+}
+
+.col-4 {
+    // width: 33.33%;
+    grid-column: span 4;
+}
+
+.col-3 {
+    // width: 25%;
+    grid-column: span 3;
+}
+
+.col-2 {
+    // width: 16.66%;
+    grid-column: span 2;
+}
+
+.col-1 {
+    // width: 8.33%;
+    grid-column: span 1;
+}
+
+@media (max-width: 1400px) {
+    .col-xl-12 {
+        // width: 100%;
+        grid-column: span 12;
+    }
+    .col-xl-11 {
+        // width: 91.66%;
+        grid-column: span 11;
+    }
+    .col-xl-10 {
+        // width: 83.33%;
+        grid-column: span 10;
+    }
+    .col-xl-9 {
+        // width: 75%;
+        grid-column: span 9;
+    }
+    .col-xl-8 {
+        // width: 66.66%;
+        grid-column: span 8;
+    }
+    .col-xl-7 {
+        // width: 58.33%;
+        grid-column: span 7;
+    }
+    .col-xl-6 {
+        // width: 50%;
+        grid-column: span 6;
+    }
+    .col-xl-5 {
+        // width: 41.66%;
+        grid-column: span 5;
+    }
+    .col-xl-4 {
+        // width: 33.33%;
+        grid-column: span 4;
+    }
+    .col-xl-3 {
+        // width: 25%;
+        grid-column: span 3;
+    }
+    .col-xl-2 {
+        // width: 16.66%;
+        grid-column: span 2;
+    }
+    .col-xl-1 {
+        // width: 8.33%;
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .col-lg-12 {
+        // width: 100%;
+        grid-column: span 12;
+    }
+    .col-lg-11 {
+        // width: 91.66%;
+        grid-column: span 11;
+    }
+    .col-lg-10 {
+        // width: 83.33%;
+        grid-column: span 10;
+    }
+    .col-lg-9 {
+        // width: 75%;
+        grid-column: span 9;
+    }
+    .col-lg-8 {
+        // width: 66.66%;
+        grid-column: span 8;
+    }
+    .col-lg-7 {
+        // width: 58.33%;
+        grid-column: span 7;
+    }
+    .col-lg-6 {
+        // width: 50%;
+        grid-column: span 6;
+    }
+    .col-lg-5 {
+        // width: 41.66%;
+        grid-column: span 5;
+    }
+    .col-lg-4 {
+        // width: 33.33%;
+        grid-column: span 4;
+    }
+    .col-lg-3 {
+        // width: 25%;
+        grid-column: span 3;
+    }
+    .col-lg-2 {
+        // width: 16.66%;
+        grid-column: span 2;
+    }
+    .col-lg-1 {
+        // width: 8.33%;
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-md-12 {
+        // width: 100%;
+        grid-column: span 12;
+    }
+    .col-md-11 {
+        // width: 91.66%;
+        grid-column: span 11;
+    }
+    .col-md-10 {
+        // width: 83.33%;
+        grid-column: span 10;
+    }
+    .col-md-9 {
+        // width: 75%;
+        grid-column: span 9;
+    }
+    .col-md-8 {
+        // width: 66.66%;
+        grid-column: span 8;
+    }
+    .col-md-7 {
+        // width: 58.33%;
+        grid-column: span 7;
+    }
+    .col-md-6 {
+        // width: 50%;
+        grid-column: span 6;
+    }
+    .col-md-5 {
+        // width: 41.66%;
+        grid-column: span 5;
+    }
+    .col-md-4 {
+        // width: 33.33%;
+        grid-column: span 4;
+    }
+    .col-md-3 {
+        // width: 25%;
+        grid-column: span 3;
+    }
+    .col-md-2 {
+        // width: 16.66%;
+        grid-column: span 2;
+    }
+    .col-md-1 {
+        // width: 8.33%;
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-12 {
+        // width: 100%;
+        grid-column: span 12;
+    }
+    .col-sm-11 {
+        // width: 91.66%;
+        grid-column: span 11;
+    }
+    .col-sm-10 {
+        // width: 83.33%;
+        grid-column: span 10;
+    }
+    .col-sm-9 {
+        // width: 75%;
+        grid-column: span 9;
+    }
+    .col-sm-8 {
+        // width: 66.66%;
+        grid-column: span 8;
+    }
+    .col-sm-7 {
+        // width: 58.33%;
+        grid-column: span 7;
+    }
+    .col-sm-6 {
+        // width: 50%;
+        grid-column: span 6;
+    }
+    .col-sm-5 {
+        // width: 41.66%;
+        grid-column: span 5;
+    }
+    .col-sm-4 {
+        // width: 33.33%;
+        grid-column: span 4;
+    }
+    .col-sm-3 {
+        // width: 25%;
+        grid-column: span 3;
+    }
+    .col-sm-2 {
+        // width: 16.66%;
+        grid-column: span 2;
+    }
+    .col-sm-1 {
+        // width: 8.33%;
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-xs-12 {
+        // width: 100%;
+        grid-column: span 12;
+    }
+    .col-xs-11 {
+        // width: 91.66%;
+        grid-column: span 11;
+    }
+    .col-xs-10 {
+        // width: 83.33%;
+        grid-column: span 10;
+    }
+    .col-xs-9 {
+        // width: 75%;
+        grid-column: span 9;
+    }
+    .col-xs-8 {
+        // width: 66.66%;
+        grid-column: span 8;
+    }
+    .col-xs-7 {
+        // width: 58.33%;
+        grid-column: span 7;
+    }
+    .col-xs-6 {
+        // width: 50%;
+        grid-column: span 6;
+    }
+    .col-xs-5 {
+        // width: 41.66%;
+        grid-column: span 5;
+    }
+    .col-xs-4 {
+        // width: 33.33%;
+        grid-column: span 4;
+    }
+    .col-xs-3 {
+        // width: 25%;
+        grid-column: span 3;
+    }
+    .col-xs-2 {
+        // width: 16.66%;
+        grid-column: span 2;
+    }
+    .col-xs-1 {
+        // width: 8.33%;
+        grid-column: span 1;
+    }
+}

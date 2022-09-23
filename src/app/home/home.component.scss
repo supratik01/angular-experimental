@@ -1,0 +1,225 @@
+.container {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-sec {
+    height: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-sec>ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Trade Gothic W01 Roman, arial, sans-serif;
+    font-size: 12px;
+    list-style: none;
+}
+
+.container-sec li {
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.container-sec .list-symbol {
+    margin: 0 6px;
+}
+
+.container-sec li:nth-last-child(2) {
+    margin-right: 10px;
+}
+
+// .container-sec li::after {
+//     content: "";
+//     background: #000;
+//     height: 8px;
+//     width: 1px;
+//     position: absolute;
+//     top: calc(50% - 4px);
+// }
+.container-sec li .list-item {
+    line-height: 22px;
+    text-decoration: none;
+    color: #000;
+}
+
+.client-login {
+    background: #bc0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.client-login::after {
+    content: "\276F";
+    margin-right: 10px;
+    position: relative;
+    font-size: 11px;
+    left: 7px;
+    transform: rotate(90deg);
+}
+
+.login-dropdown {
+    position: relative;
+}
+
+.dropdown-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px !important;
+    justify-content: flex-start;
+    top: 27px;
+    right: 20px;
+    min-width: 300px;
+    max-width: 500px;
+    z-index: 999;
+}
+
+.dropdown-list>li {
+    background-color: #bc0000;
+    color: #fff;
+    display: block;
+    //white-space: nowrap;
+    padding: 10px;
+    width: 100%;
+}
+
+.dropdown-list>li:not(:last-child) {
+    border-bottom: 2px solid #fff;
+}
+
+.dropdown-list>li:hover {
+    background: #f0f0f0;
+    color: #000;
+}
+
+// Header menu
+.header-menu {
+    display: flex;
+    margin-top: 50px;
+}
+
+.header-menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-list-item .list-item {
+    margin: 15px 20px 0;
+    font-family: cursive;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+.h-list-item .list-item:hover {
+    border-bottom: 5px solid #bc0000;
+}
+
+.header-menu-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.h-list-item-logo {
+    margin-top: -34px;
+    margin-right: 30px;
+}
+
+.search-button {
+    display: flex;
+    justify-content: flex-end;
+    background: url("https://www.fiduciarytrust.com/assets/images/fiduciary-trust-icons.png");
+    background-color: #f5f4ea;
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    margin-right: 0;
+    position: relative;
+    margin-bottom: -16px;
+}
+
+// main section
+.main {
+    background-color: #f2f2ed;
+    margin-top: 20px;
+    display: block;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-img {
+    background: url("http://onwebbox.com/Content/onwebbox.com/Mngt/RealImage/834Online-Banner-Maker.jpg");
+    height: 420px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom-card {
+    position: absolute;
+    background-color: #bc0000;
+    color: #fff;
+    padding: 18px;
+    height: 335px;
+    width: 415px;
+    margin: 36px 0 0;
+    font-family: cursive;
+    box-sizing: border-box;
+    left: 4.33%;
+    top: 2%;
+}
+
+.lower-section {
+    margin: 50px;
+}
+
+.card-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-tabs .tab-item {
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 30px;
+    // max-width: 200px;
+}
+
+.card-tabs .tab-item h4 {
+    padding-bottom: 20%;
+    padding-top: 5%;
+    font-weight: 700;
+    font-size: 25px;
+    color: #bc0000;
+}
+
+.card-tabs .tab-item p {
+    padding-bottom: 15%;
+    color: #4f758b;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 21px;
+}
+
+.tab-active {
+    border: 3px solid #587c91;
+}

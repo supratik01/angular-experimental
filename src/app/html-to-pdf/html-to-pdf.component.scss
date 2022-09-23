@@ -1,0 +1,153 @@
+.cta-btn {
+    padding: 1em 1.5em;
+    color: #fff;
+    background-color: rgb(248, 169, 169);
+}
+
+.pdf-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dummy-content {
+    position: fixed;
+    bottom: 50px;
+    right: 46%;
+    width: 250px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Page Details
+.btn-block {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 80px;
+    padding-bottom: 50px;
+    .btn {
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        color: #fff;
+        margin-left: 15px;
+    }
+}
+
+.details-block {
+    padding: 80px 0;
+}
+
+.container-wrp {
+    padding: 0 160px;
+    .article__block {
+        margin-bottom: 79px;
+    }
+    .article__pullquotemain {
+        p {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 24px;
+            font-weight: 400;
+            font-family: "TTCommonsProRegular";
+            margin: 0 0 12px;
+        }
+        h4 {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+            font-family: "TTCommonsProMedium";
+            padding-top: 14px;
+            font-weight: 500;
+        }
+    }
+    .article__description__row {
+        margin: 0 -24px;
+        display: flex;
+        .article__description__col1 {
+            flex: 0 0 63.5%;
+            padding: 0 24px;
+            .article__custom {
+                padding-bottom: 32px;
+            }
+            ol {
+                padding: 32px;
+                li {
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #000000;
+                    font-family: "TTCommonsProRegular";
+                    font-weight: 400;
+                }
+            }
+            .article__disclaimer p {
+                font-family: "TTCommonsProRegular";
+                font-size: 15px !important;
+                line-height: 20px !important;
+                color: #000000 !important;
+                margin-bottom: 24px !important;
+                font-weight: 400 !important;
+                margin: 0 0 12px
+            }
+        }
+        .article__description__col2 {
+            flex: 0 0 36.5%;
+            padding: 0 24px;
+            .article__author__image {
+                margin-bottom: 48px;
+                padding-left: 0px;
+                padding-right: 0px;
+                background: #f0f2f4;
+                .article__author__img {
+                    height: 299px;
+                    width: 100%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .article__author__cnt {
+                    padding: 24px 40px;
+                    padding-right: 15px;
+                    padding-left: 40px;
+                    min-height: 107px;
+                }
+            }
+            .article__keytakeaways {
+                padding: 36px;
+                background: #577489;
+                margin-bottom: 24px;
+                position: relative;
+                .scroll-position {
+                    position: absolute;
+                    top: -100px;
+                }
+                h4 {
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-top: 0;
+                    font-size: 24px !important;
+                    line-height: 32px !important;
+                    margin-bottom: 24px;
+                }
+                p {
+                    font-size: 20px !important;
+                    line-height: 28px !important;
+                    font-weight: 400 !important;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.showDiv {
+    visibility: hidden;
+}

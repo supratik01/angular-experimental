@@ -1,0 +1,103 @@
+body {
+    font-family: Open Sans, sans-serif !important;
+}
+
+.container-fluid {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.argon-page-header {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        color: #fff;
+        .search-box {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            border-color: rgba($color: #000, $alpha: 0.6);
+            background-color: rgba($color: #fff, $alpha: 0.9);
+            border-radius: 20px;
+            padding: 0 5px;
+            line-height: 2.5rem;
+            font-weight: 900;
+            &-icon {
+                flex: 1;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            &-input {
+                // position: relative;
+                // display: inline-block;
+                min-width: 250px;
+                background: transparent;
+                border: 0;
+                font-size: 16px;
+                outline: none;
+                transition: all 1.2s cubic-bezier(.68, -.55, .265, 1.55);
+                color: rgba($color: #000000, $alpha: 0.9);
+                &:focus {
+                    width: 380px;
+                }
+            }
+        }
+        .side-nav-menus {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            gap: 40px;
+            i {
+                color: #fff;
+            }
+            .user-login {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                gap: 10px;
+                .avatar img {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                }
+            }
+            .side-buttons {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                .btn {
+                    color: #5e72e4;
+                    padding: 0.25em 0.5em;
+                    border-radius: 0.25em;
+                    background: #fff;
+                    border: none;
+                    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+                    font-size: 0.85rem;
+                    line-height: 1.5;
+                    letter-spacing: 0.025em;
+                }
+            }
+        }
+        .breadcrum-items {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            .item a,
+            .item .seperator {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: .875rem;
+            }
+            .active {
+                color: #dee2e6;
+            }
+        }
+    }
+    .breadcrum {
+        border-top: 1px solid #90a7be!important;
+    }
+}

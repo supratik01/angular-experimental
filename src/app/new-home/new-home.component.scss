@@ -1,0 +1,433 @@
+$red-color: #b2292e;
+$btn-bg-color: #e65b60;
+$midnight: #13406e;
+.header {
+    padding: 16px 64px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background: #FFF;
+    z-index: 999;
+}
+
+.header-container {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header-content .logo {
+    width: 230px;
+    height: auto;
+}
+
+.header-content .nav {
+    display: flex;
+    margin-left: auto;
+    gap: 32px;
+    align-items: center;
+}
+
+.header-content .nav .nav-menu {
+    position: relative;
+}
+
+.header-content .nav .menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content .nav .menu-list .menu-item-li {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1a1a1a;
+    text-align: left;
+}
+
+.header-content .nav .menu-list .menu-item-li .menu-item-link {
+    padding: 14px 0 10px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.header-content .nav .menu-list .menu-item-li .menu-item-link::after {
+    content: "";
+    background-color: $red-color;
+    position: absolute;
+    height: 2.5px;
+    width: 0px;
+    transition: all 0.5s ease;
+    top: 38px;
+}
+
+.header-content .nav .menu-list .menu-item-li .menu-item-link.active {
+    color: $red-color;
+}
+
+.header-content .nav .speak-to-btn {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 16px;
+    height: 45px;
+    text-align: center;
+    white-space: nowrap;
+    color: $red-color;
+    border: 1px solid $red-color;
+    background-color: #fff;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.primary {
+    position: relative;
+    color: #fff !important;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 115%;
+        height: 225%;
+        top: -23px;
+        left: -9px;
+        border-radius: 30% / 50%;
+        background-color: $btn-bg-color;
+        transition: all 1.2s ease;
+        // transform: translate(-20%, -20%);
+    }
+    &:hover {
+        color: $red-color !important;
+        &::before {
+            background: transparent;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 30% / 50%;
+            // transform: translate(-50%, -50%);
+        }
+    }
+    span {
+        z-index: 9;
+        position: relative;
+    }
+}
+
+.secondary {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background-color: $btn-bg-color;
+        transition: all 1.2s ease;
+        border-radius: 30% / 50%;
+    }
+    &:hover {
+        color: #fff !important;
+        &::before {
+            //background: transparent;
+            width: 115%;
+            height: 225%;
+            top: -23px;
+            left: -9px;
+            border-radius: 30% / 50%;
+            // transform: translate(-50%, -50%);
+        }
+    }
+    span {
+        z-index: 9;
+        position: relative;
+    }
+}
+
+.header-content .nav .search-btn {
+    cursor: pointer;
+}
+
+.header-height {
+    padding-top: 91px;
+}
+
+.banner-class h1 {
+    font-weight: 600;
+    line-height: 80px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.banner-class h1 em {
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+.banner-class .section-container {
+    padding: 0 24px;
+}
+
+.banner-class .banner-img {
+    background: url("https://franklintempletonprod.widen.net/content/ttcgq7nmek/original/Working-Together-Hero.jpg");
+    background-position: center;
+    padding: 64px 32px;
+    padding-bottom: 90px;
+    background-size: cover;
+    text-align: right;
+}
+
+// Accordion
+// .row {
+//     display: flex;
+//     .col {
+//         flex-basis: 48%;
+//         flex-wrap: wrap;
+//         &:last-child {
+//             margin-left: 1em;
+//         }
+//     }
+// }
+.accordian {
+    .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    }
+    .tab {
+        width: 100%;
+        color: #fff;
+        overflow: hidden;
+        border-bottom: 1px solid white;
+        &:last-child {
+            border-bottom: 0;
+        }
+        &-label {
+            background-color: $midnight;
+            padding: 1.5em;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            cursor: pointer;
+            &::after {
+                content: "\276F";
+                width: 1em;
+                height: 1em;
+                text-align: center;
+                transition: all .55s;
+            }
+        }
+        &-content {
+            max-height: 0;
+            padding: 0 1.5em;
+            color: #1a1a1a;
+            background: #fff;
+            line-height: 1.5rem;
+            transition: all .55s;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        // :checked
+        input:checked {
+            +.tab-label {
+                &::after {
+                    transform: rotate(90deg);
+                }
+            }
+            ~.tab-content {
+                max-height: 100vh;
+                padding: 1.5em;
+            }
+        }
+    }
+}
+
+// Dropdown
+.dropdown {
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    // :checked
+    input:checked {
+        ~.dropdown-menu {
+            visibility: visible;
+            padding: 1em;
+        }
+    }
+    .btn {
+        background-color: $red-color;
+        border: 0;
+        padding: 1em;
+        width: 30%;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &::after {
+            content: "\276F";
+            transform: rotate(90deg);
+        }
+    }
+    &-menu {
+        visibility: hidden;
+        position: absolute;
+        list-style: none;
+        border: 2px solid #1a1a1a;
+        border-radius: 5px;
+        width: 13%;
+        //padding: 1em;
+        margin-top: 2px;
+        z-index: 99;
+        background: #fff;
+        li {
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover {
+                background-color: rgb(248, 232, 232);
+            }
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
+
+.image-container {
+    position: relative;
+}
+
+.image__block__box {
+    position: absolute;
+    right: 0;
+    animation: shiftToLeft 4s step-end;
+    animation-fill-mode: forwards;
+    top: 50%;
+    margin-left: auto;
+    background: #1a2537;
+    padding: 28px;
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
+    text-align: left;
+    h2 {
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+}
+
+.image__block__link {
+    padding: 12px 16px;
+    background: #b2292e;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 175px;
+    text-align: center;
+}
+
+.pixel-to-original-img {
+    width: 100%;
+    height: 492px;
+    // image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 2s;
+    // &:hover {
+    //     image-rendering: auto !important;
+    //     transition: 2s;
+    //     background-image: url("../../assets/images/talk-to-us-box-original.jpg") !important;
+    // }
+}
+
+#my-canvas {
+    width: 100%;
+    height: 492px;
+    transition: 2s !important;
+}
+
+#my-canvas2 {
+    width: 100%;
+    height: 492px;
+    transition: 2s !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 1280px) {
+    .header-content .nav .menu-list .menu-item-li .menu-item-link:hover {
+        color: $red-color;
+    }
+    .header-content .nav .menu-list .menu-item-li .menu-item-link:hover::after {
+        width: 100% !important;
+    }
+    .header-content .nav .menu-list .menu-item-li .menu-item-link.active::after {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner-class {
+        padding-top: 64px;
+        padding-bottom: 70px;
+    }
+    .banner-class .section-container {
+        padding: 0 64px;
+    }
+}
+
+@keyframes shiftToLeft {
+    0% {
+        right: 0;
+    }
+    25% {
+        right: 25px;
+    }
+    50% {
+        right: 50px;
+    }
+    75% {
+        right: 75px;
+    }
+    100% {
+        right: 100px;
+    }
+}

@@ -1,0 +1,107 @@
+<div class="container">
+    <header>
+        <nav class="trust-navbar">
+            <section class="container-sec">
+                <ul>
+                    <li>
+                        <a class="list-item" href="/in-the-news">In the News</a>
+                    </li>
+                    <li class="list-symbol"> &#10073; </li>
+                    <li>
+                        <a class="list-item" href="/for-advisord">For Advisors</a>
+                    </li>
+                    <li class="list-symbol"> &#10073; </li>
+                    <li>
+                        <a class="list-item" href="/custody-services">Custody Services</a>
+                    </li>
+                    <li class="list-symbol"> &#10073; </li>
+                    <li>
+                        <a class="list-item" href="/careers">Careers</a>
+                    </li>
+                    <li>
+                        <div class="login-dropdown">
+                            <a class="client-login" (click)="isListShow = !isListShow">Client Login</a>
+                            <ul class="dropdown-list" *ngIf="isListShow">
+                                <li>Fiduciary Trust Online</li>
+                                <li>Fiduciary Trust of India Online</li>
+                                <li>Charitable Giving</li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <section class="header-menu">
+            <div class="row">
+                <div class="col-9 header-menu-items">
+                    <div class="h-list-item-logo">
+                        <img src="https://www.fiduciarytrust.com/assets/images/ftci_logo_pos_0120.svg" width="208px" height="100%" alt="">
+                    </div>
+                    <div class="h-list-item">
+                        <a class="list-item" href="#">Who We Are</a>
+                    </div>
+                    <div class="h-list-item">
+                        <a class="list-item" href="#">What We Do</a>
+                    </div>
+                    <div class="h-list-item">
+                        <a class="list-item" href="#">Our Insights</a>
+                    </div>
+                    <div class="h-list-item">
+                        <a class="list-item" href="#">On Demand</a>
+                    </div>
+                    <div class="h-list-item">
+                        <a class="list-item" href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-3 header-menu-button">
+                    <button class="search-button"></button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="main">
+        <div class="banner">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h4>WHO WE ARE</h4>
+                    <h1>Fiduciary Trust International</h1>
+                    <p>We are a world-class investment and wealth manager, providing personalized solutions to high net-worth individuals, families, endowments, foundations and institutions.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <div class="banner-img"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-section">
+            <div class="card-tabs text-center">
+                <div class="card tab-item" (click)="selectedTab = 1" [ngClass]="selectedTab == 1 ? 'tab-active': ''">
+                    <div class="card-body">
+                        <h4>You are at the Center of All We Do</h4>
+                        <p>WHY IT MATTERS THAT WE ARE A FIDUCIARY</p>
+                    </div>
+                </div>
+                <div class="card tab-item" (click)="selectedTab = 2" [ngClass]="selectedTab == 2 ? 'tab-active': ''">
+                    <div class="card-body">
+                        <h4>You are at the Center of All We Do</h4>
+                        <p>WHY IT MATTERS THAT WE ARE A FIDUCIARY</p>
+                    </div>
+                </div>
+                <div class="card tab-item" (click)="selectedTab = 3" [ngClass]="selectedTab == 3 ? 'tab-active': ''">
+                    <div class="card-body">
+                        <h4>You are at the Center of All We Do</h4>
+                        <p>WHY IT MATTERS THAT WE ARE A FIDUCIARY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>

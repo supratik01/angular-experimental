@@ -1,0 +1,139 @@
+<div class="page-body">
+    <aside>
+        <div class="argon-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a>
+                        <img class="logo-img" src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/img/brand/blue.png" alt="">
+                    </a>
+                </div>
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+            <div class="primary-menu">
+                <div class="menu" *ngFor="let menu of mainMenus; let i=index;">
+                    <div class="menu-tab" [ngClass]="{ 'menu-bg': menu.isActive }">
+                        <span class="menu-item-logo" [innerHTML]="menu.logo"></span>
+                        <input type="checkbox" name="menu-item" id="menu-{{i}}">
+                        <label for="menu-{{i}}" class="menu-label" (click)="onMenuClick(i)">{{menu.name}}</label>
+                    </div>
+                    <ul class="sub-menu" [ngClass]="{ 'open-menu': menu.isActive }">
+                        <li *ngFor="let sub of menu.subMenus; let k=index;">
+                            <a [href]="sub.link" class="nav-link">
+                                <!-- <span class="sidenav-mini-icon"> D </span> -->
+                                <span class="sidenav-normal"> {{sub.name}} </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="secondary-menu"></div>
+        </div>
+    </aside>
+    <section>
+        <div class="argon-dashboard">
+            <div class="argon-header">
+                <app-argon-header></app-argon-header>
+            </div>
+            <div class="argon-body bg-primary pb-6">
+                <div class="card-default">
+                    <div class="card-title">
+                        <div class="head-text">
+                            <span>Total Trafic</span>
+                            <h3>350,897</h3>
+                        </div>
+                        <div class="head-icon bg-gradient-red">
+                            <i class="fa-solid fa-hand-point-up"></i>
+                        </div>
+                    </div>
+                    <div class="card-data text-sm mt-3">
+                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                        <span class="text-nowrap">Since last month</span>
+                    </div>
+                </div>
+                <div class="card-default">
+                    <div class="card-title">
+                        <div class="head-text">
+                            <span>New Users</span>
+                            <h3>2,356</h3>
+                        </div>
+                        <div class="head-icon bg-gradient-orange">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <div class="card-data text-sm mt-3">
+                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                        <span class="text-nowrap">Since last month</span>
+                    </div>
+                </div>
+                <div class="card-default">
+                    <div class="card-title">
+                        <div class="head-text">
+                            <span>Sales</span>
+                            <h3>924</h3>
+                        </div>
+                        <div class="head-icon bg-gradient-green">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="card-data text-sm mt-3">
+                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                        <span class="text-nowrap">Since last month</span>
+                    </div>
+                </div>
+                <div class="card-default">
+                    <div class="card-title">
+                        <div class="head-text">
+                            <span>Performance</span>
+                            <h3>49.67%</h3>
+                        </div>
+                        <div class="head-icon bg-gradient-info">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <div class="card-data text-sm mt-3">
+                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                        <span class="text-nowrap">Since last month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="argon-cards container-fluid">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="cardx">
+                            <div class="cardx-header">
+                                <h3>Team members</h3>
+                            </div>
+                            <div class="cardx-body">
+                                dfdds
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="cardx">
+                            <div class="cardx-header">
+                                <h3>Team members</h3>
+                            </div>
+                            <div class="cardx-body">
+                                dfdds
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="cardx">
+                            <div class="cardx-header">
+                                <h3>Team members</h3>
+                            </div>
+                            <div class="cardx-body">
+                                dfdds
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>

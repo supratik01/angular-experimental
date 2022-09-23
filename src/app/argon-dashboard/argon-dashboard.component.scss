@@ -1,0 +1,172 @@
+.page-body {
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+
+.argon-sidebar {
+    padding: 20px;
+    width: 250px;
+    position: fixed;
+    min-height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #eee;
+    background-color: fcfcfc;
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .logo {
+            &-img {
+                width: 108px;
+                height: 32px;
+            }
+        }
+    }
+    .primary-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        .menu {
+            width: 100%;
+            &-tab {
+                padding: 7px;
+                display: flex;
+                justify-content: space-between;
+                label {
+                    position: relative;
+                    flex: 4;
+                    cursor: pointer;
+                    &::after {
+                        content: '\276F';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        text-align: center;
+                        transition: all .55s;
+                        color: #ddd;
+                    }
+                }
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    z-index: -1;
+                    &:checked {
+                        +.menu-label {
+                            &::after {
+                                transform: rotate(90deg);
+                                color: rgb(67, 182, 236);
+                            }
+                        }
+                    }
+                }
+            }
+            &-item-logo {
+                flex: 1;
+            }
+            .sub-menu {
+                list-style: none;
+                padding-top: 15px;
+                padding-left: 31px;
+                transition: all 0.5s ease;
+                display: none;
+                font-weight: 300;
+                font-size: 14px;
+                li {
+                    // margin-bottom: 10px;
+                    padding-bottom: 0.45rem;
+                    a {
+                        text-decoration: none;
+                        color: #1a1a1a;
+                        padding-top: 0.45rem;
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .open-menu {
+        display: block !important;
+    }
+    .menu-bg {
+        background-color: #eee;
+        border-radius: 5px;
+    }
+}
+
+.argon-header {
+    position: relative;
+}
+
+.argon-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    .card-default {
+        color: #000;
+        background: #fff;
+        padding: 1em 1.5em;
+        border-radius: 10px;
+        width: 22%;
+        .card-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .head-text {
+                span {
+                    text-transform: uppercase;
+                    color: #8898aa!important;
+                    font-size: .8125rem;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+                h3 {
+                    font-weight: 600;
+                }
+            }
+            .head-icon {
+                border-radius: 50%;
+                color: #fff;
+                padding: 12px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        .card-data {
+            font-weight: 300;
+        }
+    }
+}
+
+.argon-cards {
+    position: absolute;
+    padding: 20px 20px 0 20px;
+    .cardx {
+        position: relative;
+        margin-bottom: 30px;
+        box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        padding: 1.2em 1.5rem;
+        &-header {
+            margin-bottom: 0;
+            border: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+            background-color: #fff;
+            h3 {
+                font-size: 1.0625rem;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+        }
+        &-body {
+            padding: 1.5em;
+        }
+    }
+}
